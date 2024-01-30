@@ -1,0 +1,67 @@
+:root {
+  --font-color: #fff;
+  --background-surface-dark-mode: rgba(255, 255, 255, 0.1);
+  --stroke-color-dark-mode: rgba(255, 255, 255, 0.5);
+  --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--font-color);
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+  display: inline-block;
+}
+
+#profile .nickname {
+  font-weight: 500;
+  line-height: 24px;
+  margin: 8px auto 24px;
+}
+
+ul {
+  list-style: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 16px 24px;
+  background: var(--background-surface-dark-mode);
+  border: 1px solid var(--stroke-color-dark-mode);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+ul li a:hover {
+  background: var(--surface-color-dark-mode-hover);
+  border: 1.5px solid var(--font-color);
+}
