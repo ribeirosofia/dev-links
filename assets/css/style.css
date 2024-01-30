@@ -3,6 +3,7 @@
   --background-surface-dark-mode: rgba(255, 255, 255, 0.1);
   --stroke-color-dark-mode: rgba(255, 255, 255, 0.5);
   --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color-dark-mode: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -64,4 +65,19 @@ ul li a {
 ul li a:hover {
   background: var(--surface-color-dark-mode-hover);
   border: 1.5px solid var(--font-color);
+}
+
+#social-links {
+  margin: 48px 76px;
+  width: 100%;
+}
+
+#social-links ion-icon {
+  width: 40px;
+  height: 40px;
+  padding-right: 16px;
+}
+
+#social-links ion-icon:hover {
+  fill: var(--highlight-color-dark-mode);
 }
